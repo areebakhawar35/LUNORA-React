@@ -1,0 +1,399 @@
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap");
+
+.admin-page {
+  min-height: 100vh;
+  padding: 32px clamp(18px, 5vw, 76px) 70px;
+  background: #f6f3ec;
+  color: #302d26;
+  font-family: "DM Sans", sans-serif;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #dcd7ca;
+}
+
+.admin-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.admin-brand span {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.admin-brand small,
+.admin-eyebrow {
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.admin-header-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.admin-secondary-button,
+.admin-error button {
+  padding: 12px 16px;
+  border: 1px solid #b9b29f;
+  background: transparent;
+  color: #302d26;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+}
+
+.admin-secondary-button:disabled {
+  opacity: 0.55;
+  cursor: wait;
+}
+
+.admin-intro {
+  padding: 45px 0 30px;
+}
+
+.admin-eyebrow {
+  color: #77765c;
+}
+
+.admin-intro h1 {
+  margin: 10px 0;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(36px, 5vw, 60px);
+  font-weight: 500;
+}
+
+.admin-intro h1 em,
+.admin-panel-heading h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+}
+
+.admin-intro > p:last-child {
+  color: #77736a;
+  line-height: 1.7;
+}
+
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin: 10px 0 32px;
+}
+
+.admin-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+  border: 1px solid #e0dbcf;
+  background: #fffdf8;
+}
+
+.admin-stat > span {
+  color: #716e62;
+  font-size: 13px;
+}
+
+.admin-stat strong {
+  overflow-wrap: anywhere;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(23px, 3vw, 34px);
+  font-weight: 500;
+}
+
+.admin-stat small {
+  color: #898477;
+  font-size: 11px;
+}
+
+.admin-orders-panel {
+  padding: clamp(18px, 3vw, 32px);
+  border: 1px solid #e0dbcf;
+  background: #fffdf8;
+}
+
+.admin-panel-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.admin-panel-heading h2 {
+  margin: 6px 0 0;
+  font-size: 30px;
+}
+
+.admin-order-count {
+  color: #77736a;
+  font-size: 12px;
+}
+
+.admin-search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 650px;
+  margin-bottom: 24px;
+  padding: 0 14px;
+  border: 1px solid #ded9cd;
+}
+
+.admin-search span {
+  font-size: 24px;
+  color: #77765c;
+}
+
+.admin-search input {
+  width: 100%;
+  min-width: 0;
+  padding: 15px 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: #302d26;
+  font: inherit;
+  font-size: 12px;
+}
+
+.admin-table-wrap {
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 12px;
+}
+
+.admin-table th {
+  padding: 15px 12px;
+  background: #f5f1e8;
+  color: #77736a;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.admin-table td {
+  padding: 17px 12px;
+  border-bottom: 1px solid #eee9df;
+  vertical-align: middle;
+}
+
+.admin-table td:first-child strong {
+  white-space: nowrap;
+}
+
+.admin-table td small {
+  display: block;
+  margin-top: 5px;
+  color: #858074;
+  overflow-wrap: anywhere;
+}
+
+.admin-status {
+  display: inline-block;
+  padding: 7px 9px;
+  background: #eeeee2;
+  color: #5e6347;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.admin-view-button {
+  padding: 8px 12px;
+  border: 1px solid #77765c;
+  background: transparent;
+  color: #454632;
+  cursor: pointer;
+  font: inherit;
+  font-size: 11px;
+}
+
+.admin-empty {
+  padding: 55px 15px;
+  text-align: center;
+  color: #77736a;
+  line-height: 1.7;
+}
+
+.admin-empty > span {
+  font-size: 35px;
+}
+
+.admin-empty h3 {
+  color: #302d26;
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.admin-error {
+  margin: 20px 0;
+  padding: 18px;
+  border: 1px solid #d9b8a9;
+  background: #fff7f2;
+  color: #733e2e;
+  overflow-wrap: anywhere;
+}
+
+.admin-error p {
+  line-height: 1.6;
+}
+
+.admin-modal-backdrop {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  overflow-y: auto;
+  padding: 20px;
+  background: rgb(25 24 20 / 60%);
+}
+
+.admin-detail-modal {
+  width: min(700px, 100%);
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: clamp(20px, 4vw, 36px);
+  background: #fffdf8;
+  color: #302d26;
+}
+
+.admin-detail-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 1px solid #e0dbcf;
+  padding-bottom: 20px;
+}
+
+.admin-detail-heading h2 {
+  overflow-wrap: anywhere;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+}
+
+.admin-close-button {
+  align-self: flex-start;
+  border: 0;
+  background: transparent;
+  color: #302d26;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.admin-customer-details {
+  padding: 20px 0;
+}
+
+.admin-customer-details h3,
+.admin-items-title {
+  font-family: "Playfair Display", serif;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.admin-customer-details p {
+  overflow-wrap: anywhere;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.admin-detail-items {
+  border-top: 1px solid #e0dbcf;
+}
+
+.admin-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 14px 0;
+  border-bottom: 1px solid #eee9df;
+}
+
+.admin-detail-item img {
+  width: 65px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.admin-detail-item div {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.admin-detail-item strong {
+  overflow-wrap: anywhere;
+  font-size: 12px;
+}
+
+.admin-detail-item small {
+  color: #77736a;
+  font-size: 11px;
+}
+
+.admin-detail-total {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 22px 0;
+  font-size: 14px;
+}
+
+.admin-detail-total strong {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+}
+
+.admin-private-note {
+  padding: 12px;
+  background: #f5f1e8;
+  color: #77736a;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+@media (max-width: 760px) {
+  .admin-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .admin-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-stat {
+    padding: 20px;
+  }
+
+  .admin-panel-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .admin-orders-panel {
+    padding: 16px;
+  }
+}
